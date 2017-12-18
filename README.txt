@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/dudleystorey/pen/knqyK.
-
- Technique explained in [the related blog post](http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video)
+###Buddha Bot
+Can a machine be the source of spirituality? Religious and science are different domains. further, they are usually placed as a binary opposition. However, in fact, there are a lot of chance that science and religion can interact. This project explores the notion of religious as a computational commodity. Buddha Bot is an algorithm that has been trained on the Buddhism manuscript for answering human in the form of chatbot.
