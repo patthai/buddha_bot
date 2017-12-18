@@ -10,7 +10,7 @@ function operation(user_chat_input)
 	//buddha user_message;
 	var user_message = user_chat_input.toLowerCase();
 	var user_message_remove_stopwords = user_message.removeStopWords().replace(/[^a-zA-Z 0-9]+/g,'');
-	console.log(user_message_remove_stopwords);
+	//console.log(user_message_remove_stopwords);
 	
 	
 	var response_candidate ="";
@@ -41,7 +41,7 @@ function operation(user_chat_input)
 			{
     			var word = user_words[i]; 
 				var simWords = Word2VecUtils.findSimilarWords(NUM_TO_SHOW, word);
-				console.log(simWords);
+				//console.log(simWords);
 				for (z = 0; z < simWords.length; z++)
 				{	
 					//console.log("simWords : " + simWords);
@@ -63,7 +63,7 @@ function operation(user_chat_input)
 			set_of_search_words = set_of_search_words.split(",");
 			}
 	
-		console.log("set_of_search_words : " + set_of_search_words);
+		//console.log("set_of_search_words : " + set_of_search_words);
 	
 		//search all lines
 	

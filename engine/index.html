@@ -54,12 +54,30 @@
     <script src="js/ai/remove_stopword.js"></script>
     <script src="js/ai/data_clean_up.js"></script>
     <script src="js/ai/ai.js"></script>
+    <script  src="js/post_to_sheet.js"></script>
     <script  src="js/index.js"></script>
     
 
+
+    <form id="post_data">
+       	<div style="display: none;">
+       		<input name="conversation_id_post" id="conversation_id" type="text" value="">
+       		<input name="user_content_post" id="user_content" type="text" value="">
+       		<input name="buddha_content_post" id="buddha_content" type="text" value="">
+       		<input name="feedback_content_post" id="feedback_content" type="text" value="">
+		</div>
+	</form>
+
+
 </body>
 
+
+
 <script>
+var min = 1000000000;
+var max = 9999999999;
+var conversation_id_init = Math.floor(Math.random() * (max - min + 1)) + min;
+
 
 var element = document.getElementById("loading_screen");
 element.parentNode.removeChild(element);
