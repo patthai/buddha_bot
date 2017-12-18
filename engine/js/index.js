@@ -1,4 +1,4 @@
-var threshold_feedback = 1;
+var threshold_feedback = 3;
 var count_feedback = 0;
 var buddha_response = 1;
 var bot_step = 1;
