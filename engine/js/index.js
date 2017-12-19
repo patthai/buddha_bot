@@ -1,4 +1,4 @@
-var threshold_feedback = 3;
+var threshold_feedback = 6;
 var count_feedback = 0;
 var buddha_response = 1;
 var bot_step = 1;
@@ -99,12 +99,12 @@ function create_buddha_Message(input) {
   if ($('.message-input').val() != '') {
     return false;
   }
-  $('<div class="message loading new"><figure class="avatar"><img src="media/buddha.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+  $('<div class="message loading new" style="background: rgba(200, 200, 200, 0.2);"><figure class="avatar"><img src="media/buddha.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
   updateScrollbar();
 
   setTimeout(function() {
     $('.message.loading').remove();
-    $('<div class="message new"><figure class="avatar"><img src="media/buddha.jpg" /></figure>' + input + '</div>').appendTo($('.mCSB_container')).addClass('new');
+    $('<div class="message new" style="background: rgba(200, 200, 200, 0.2);"><figure class="avatar"><img src="media/buddha.jpg" /></figure>' + input + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
     i++;
@@ -116,12 +116,12 @@ function create_nirvana_Message(input) {
   if ($('.message-input').val() != '') {
     return false;
   }
-  $('<div class="message loading new"><figure class="avatar"><img src="media/lotus.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+  $('<div class="message loading new" style="background: rgba(210, 57, 132, 0.63);"><figure class="avatar"><img src="media/lotus.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
   updateScrollbar();
 
   setTimeout(function() {
     $('.message.loading').remove();
-    $('<div class="message new"><figure class="avatar"><img src="media/lotus.jpg" /></figure>' + input + '</div>').appendTo($('.mCSB_container')).addClass('new');
+    $('<div class="message new" style="background: rgba(210, 57, 132, 0.63);"><figure class="avatar"><img src="media/lotus.jpg" /></figure>' + input + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
     i++;
